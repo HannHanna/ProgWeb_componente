@@ -1,6 +1,9 @@
 # Librería Visual Reutilizable: Componente.js
 
 ## Portada
+
+> **Autora:** Xana Amalinalli Pérez Jiménez  
+> **Institución:** Instituto Tecnológico de Oaxaca 
 * **Nombre de la librería:** Componente.js
 * **Componentes incluidos:** Un tooltip dinámico (`crearTooltip`) y un menú desplegable interactivo (`crearDropdown`).
 * **Problema que resuelve:** Permite agregar elementos interactivos y de ayuda visual en cualquier página web mediante código modular y reutilizable, evitando la necesidad de reescribir la estructura o depender de librerías externas pesadas.
@@ -43,7 +46,10 @@ crearDropdown("#miMenuDropdown", "Menú de Opciones ▼", [
 
 ## Capturas de Pantalla
 * Vista general de la interfaz:
-  (Agrega aquí tu captura de pantalla mostrando el contenedor morado en el centro con los elementos inicializados).
+  ![Vista General](img/index.png)
 
-* Componentes en funcionamiento:
-  (Agrega aquí tu captura mostrando el tooltip activo al pasar el cursor y el menú desplegado al hacer clic).
+* Componente Tooltip en funcionamiento:
+  ![Tooltip Activo](img/tooltip.png)
+
+* Menú Desplegable en funcionamiento:
+  ![Menú Desplegado](img/menu.png)
