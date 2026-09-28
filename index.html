@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Librería de Componentes Reutilizables</title>
+  <!-- Enlazar la hoja de estilos del componente -->
+  <link rel="stylesheet" href="css/componente.css">
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4f4f9;
+    }
+
+    /* Contenedor simple color morado en el centro */
+    .caja-central {
+      background-color: #9b59b6;
+      color: white;
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    /* Estilo del botón del tooltip dentro de la caja */
+    #miBoton {
+      padding: 8px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      background-color: #fff;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contenedor simple color morado en el centro -->
+  <div class="caja-central">
+    <h1>Librería de Componentes</h1>
+    <p>Prueba los componentes interactivos:</p>
+
+    <!-- Componente 1: Tooltip -->
+    <div>
+      <button id="miBoton">Tooltip Interactivos</button>
+    </div>
+
+    <br>
+
+    <!-- Componente 2: Menú Desplegable -->
+    <div id="miMenuDropdown"></div>
+  </div>
+
+  <!-- Enlazar el script de la librería -->
+  <script src="js/componente.js"></script>
+  <script>
+    // Inicializar el Tooltip
+    crearTooltip("#miBoton", "Este es un tooltip dinámico.");
+
+    // Inicializar el Menú Desplegable con parámetros dinámicos
+    crearDropdown("#miMenuDropdown", "Menú de Opciones ▼", [
+      { texto: "Opción 1: Inicio", enlace: "#" },
+      { texto: "Opción 2: Perfil", enlace: "#" },
+      { texto: "Opción 3: Configuración", enlace: "#" }
+    ]);
+  </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+/* Posicionar el contenedor del tooltip */
+.mi-tooltip-contenedor {
+  position: relative;
+  display: inline-block;
+}
+
+/* Diseñar la caja del tooltip */
+.mi-tooltip-texto {
+  visibility: hidden;
+  width: 180px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Mostrar el tooltip al pasar el cursor */
+.mi-tooltip-contenedor:hover .mi-tooltip-texto {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ==========================================
+   ESTILOS PARA EL MENÚ DESPLEGABLE (DROPDOWN)
+   ========================================== */
+.dropdown-contenedor {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.dropdown-boton {
+  background-color: #6c5ce7;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dropdown-contenido {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dropdown-contenido a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-contenido a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Mostrar contenido al activar la clase */
+.dropdown-contenido.mostrar {
+  display: block;
+}
